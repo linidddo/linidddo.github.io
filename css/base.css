@@ -1,1 +1,40 @@
 
+/* 公共样式 */
+.clearfix::before,
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* 去除下划线 */
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+body{
+    font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+    color: #333;
+}
+
+/* 设置一个类，用来表示中间容器的宽度 头部颜色丢失 ,单独添加一个background */
+.w{
+    /* 固定容器的宽度 */
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;   
+    /* 设置最小宽度,不让body过小，溢出 */
+    min-width: 1226px;
+    background-color: #333;
+}
+
+/* 设置一个类，用来表示中间容器的宽度 */
+.ww{
+    /* 固定容器的宽度 */
+    width: 1226px;
+    /* 设置容器居中 */
+    margin: 0 auto;   
+    /* 设置最小宽度,不让body过小，溢出 */
+    min-width: 1226px;
+}
